@@ -67,7 +67,9 @@ async def on_message(message: discord.Message):
     # endif
 
     if message.content in oisiiyummy:  # 美味しいヤミー
-        await message.channel.send(file=discord.File(os.path.join(bot_path, oisiiyummy_file)))
+        await message.channel.send(
+            file=discord.File(os.path.join(bot_path, oisiiyummy_file))
+        )
         return
     # endif
 
