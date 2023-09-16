@@ -21,6 +21,7 @@ bot_path = os.path.dirname(os.path.abspath(__file__))
 
 with open(os.path.join(bot_path, "token.txt"), mode="r", encoding="cp932") as bot_token:
     TOKEN = str(bot_token.read())
+    print(sysmessage, "TOKEN DETECTED!!")
 
 
 # 単語定義
